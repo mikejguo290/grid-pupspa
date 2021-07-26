@@ -28,7 +28,7 @@ body {
   
   .banner {
     grid-column-start: 1;
-    grid-column-end: span 7;
+    grid-column-end: 7;
 
     padding: 3%;
     background-color: #db6363;
@@ -78,15 +78,16 @@ body {
   }
   
   .address {
-  
+    /* short hand for grid-column-start & grid-column-end */
+    grid-column: 1 / span 2;
   }
   
   .hours {
-  
+    grid-column: 3 / span 2;
   }
   
   .call-us {
-  
+    grid-column: 5 / span 2;
   }
   
   .icon {
