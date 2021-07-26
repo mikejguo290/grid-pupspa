@@ -7,6 +7,8 @@ body {
   .grid {
     /* initialise the grid */
     display: grid;
+    /* define six template rows */
+    grid-template-rows: 100px 8fr 5fr 4fr 5fr 80px;
   }
   
   header {
