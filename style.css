@@ -14,7 +14,8 @@ body {
   }
   
   header {
-  
+    grid-column-start: 1;
+    grid-column-end: 7;
   }
   
   .title {
@@ -26,6 +27,9 @@ body {
   }
   
   .banner {
+    grid-column-start: 1;
+    grid-column-end: span 7;
+
     padding: 3%;
     background-color: #db6363;
     color: #ffffff;
@@ -47,6 +51,9 @@ body {
   }
   
   .about {
+    grid-column-start: 1;
+    grid-column-end: 7;
+
     background-color: #f0f0f0;
   
   }
@@ -106,10 +113,11 @@ body {
   }
   
   footer {
+    grid-column-start: 1;
+    grid-column-end: 7;
     background-color: #db6363;
     color: #ffffff;
     font-family: Poppins;
     font-size: 16px;
     letter-spacing: 0.4px;
-  
   }
