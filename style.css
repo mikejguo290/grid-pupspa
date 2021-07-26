@@ -5,7 +5,8 @@ body {
   }
   
   .grid {
-  
+    /* initialise the grid */
+    display: grid;
   }
   
   header {
