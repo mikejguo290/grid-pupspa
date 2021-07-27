@@ -17,6 +17,7 @@ body {
   header {
     grid-column-start: 1;
     grid-column-end: 7;
+    display: grid; /* to centre the <p> in header */
   }
   
   .title {
@@ -30,7 +31,7 @@ body {
   .banner {
     grid-column-start: 1;
     grid-column-end: 7;
-
+    
     padding: 3%;
     background-color: #db6363;
     color: #ffffff;
@@ -43,7 +44,10 @@ body {
   
   p, .banner-contents {
     max-width: 80%;
-    margin: auto;
+    margin: auto; 
+    /* why does setting margin:auto and p's container's display property to grid, center <p>, both horizontally and vertically? 
+    why doesn't it work without display:grid? don't the containers of p already have width? 
+    does margin:auto apply to two dimensions when container is grid? */
   }
   
   img {
@@ -54,6 +58,7 @@ body {
   .about {
     grid-column-start: 1;
     grid-column-end: 7;
+    display: grid;
 
     background-color: #f0f0f0;
   
@@ -68,6 +73,8 @@ body {
   }
   
   .box {
+    display:grid;
+
     background-color: #2f2f2f;
     color: #ffffff;
     font-family: Poppins;
@@ -103,7 +110,8 @@ body {
     font-size: 18px;
     font-style: italic;
     letter-spacing: 3.7px;
-  
+    
+    display: grid;
   }
   
   .one {
@@ -124,4 +132,6 @@ body {
     font-family: Poppins;
     font-size: 16px;
     letter-spacing: 0.4px;
+
+    display: grid;
   }
